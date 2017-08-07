@@ -1,13 +1,8 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import tempLate from "./"
+import thenP from "./"
 
-test(({same, end}) => {
-  same(
-    tempLate(true),
-    false
-  )
-
-  end()
+test(({equal}) => {
+  return thenP((value) => equal(value, "a"))(Promise.resolve("a"))
 })
