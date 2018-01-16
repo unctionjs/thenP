@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (any => any) => Promise<any> => Promise<any>
+> UnaryFunctionType => Promise<mixed> => Promise<mixed>
 
 A port of the `Promise.prototype.then()` function.
 
